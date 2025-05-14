@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - My Tech Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Get in touch with My Tech Blog.">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-link">
+               
+                <h1>My Tech Blog</h1>
+            </a>
+            <nav>
+                <button class="nav-toggle" aria-label="toggle navigation" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="post.html">Blog Post</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-form-section container">
+            <h2>Contact Us</h2>
+            <p>Have a question, suggestion, or just want to say hello? Fill out the form below, and we'll get back to you as soon as possible.</p>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required minlength="3">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required minlength="5">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+                    <div class="error-message"></div>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="formStatusMessage"></div>
+        </section>
+
+        <section class="contact-info-section container">
+            <h3>Other Ways to Reach Us</h3>
+            <p><strong>Email:</strong> mytechbloginfo@gmail.com</p>
+            <p><strong>Address:</strong> 123 Tech Avenue, Innovation City, TX 75001</p>
+          
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> My Tech Blog. All rights reserved by Cahira 2025.</p>
+            <p>Follow us: <a href="#">Twitter</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
